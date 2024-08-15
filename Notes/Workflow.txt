@@ -1,0 +1,16 @@
+Objectives:
+
+- Every new phase adds income to the GOLD counter
+
+- Implement Bank Options from game doc
+
+- Implement 'Upkeep' function AKA resetting everything for the new phase.
+
+
+
+Notes for next time:
+
+- Events like upkeep should occur at the highest level (within the script for the passive phase)
+	and trickle down into individual elements.
+	This can be done by sending a signal from the HUD to the Passive Phase script
+	to activate upkeep, then change individual elements there.

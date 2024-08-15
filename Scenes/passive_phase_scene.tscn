@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bftt2niwx1bsb"]
+
+[ext_resource type="PackedScene" uid="uid://c0kespyjex8et" path="res://Scenes/bank_scene.tscn" id="1_wyvbv"]
+[ext_resource type="PackedScene" uid="uid://bbbnrilmjb4dg" path="res://Scenes/hud_passive_phase.tscn" id="2_71ip0"]
+
+[node name="PassivePhaseScene" type="Node2D"]
+
+[node name="BankScene" parent="." instance=ExtResource("1_wyvbv")]
+position = Vector2(752, 230)
+
+[node name="HUD Passive Phase" parent="." instance=ExtResource("2_71ip0")]

@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0kespyjex8et"]
+
+[ext_resource type="Script" path="res://Scripts/BankScene.cs" id="1_5yxcy"]
+[ext_resource type="Texture2D" uid="uid://c2oekry5dwemw" path="res://Assets/yellow.webp" id="1_y6yud"]
+[ext_resource type="Texture2D" uid="uid://b1xbnny2pwlnr" path="res://Assets/Emark.png" id="3_k0hvu"]
+
+[sub_resource type="Theme" id="Theme_27n4w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj0ql"]
+size = Vector2(156, 183)
+
+[node name="BankScene" type="Node2D"]
+script = ExtResource("1_5yxcy")
+
+[node name="BankSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.295898, 0.295898)
+texture = ExtResource("1_y6yud")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -76.0
+offset_top = -117.0
+offset_right = 76.0
+offset_bottom = -29.0
+theme = SubResource("Theme_27n4w")
+theme_override_colors/font_color = Color(1, 0.764706, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "BANK"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, -14.5)
+shape = SubResource("RectangleShape2D_pj0ql")
+
+[node name="AlertSprite" type="Sprite2D" parent="."]
+position = Vector2(0, -150)
+scale = Vector2(0.0429348, 0.0429348)
+texture = ExtResource("3_k0hvu")

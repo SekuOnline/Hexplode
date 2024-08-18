@@ -4,6 +4,7 @@ using System;
 public partial class HudPassivePhase : CanvasLayer
 {
 
+	//Make 'gold' a pointer to the PlayerData object.
 	int gold;
 	Label goldLabel;
 	// Called when the node enters the scene tree for the first time.

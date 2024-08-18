@@ -6,7 +6,7 @@ class PlayerData
     //initGold is the gold at the start of the game.
     int initGold = 10;
 
-    PlayerData instance;
+    public static PlayerData instance;
 
     //10 is a filler number for some amount of possible structures.
     Structure[] createdStructures = new Structure[GlobalVariables.numTotalStructures];
